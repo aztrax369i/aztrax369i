@@ -1,0 +1,76 @@
+:root {
+    --cyber-bg: #0b0d12;
+    --cyber-surface: #131722;
+    --cyber-cyan: #00f3ff;
+    --cyber-red: #cc0000;
+    --cyber-border: rgba(0, 243, 255, 0.25);
+}
+
+body {
+    background-color: var(--cyber-bg);
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+}
+
+.font-cyber {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Acentos Neón */
+.text-cyber-cyan { color: var(--cyber-cyan) !important; }
+.text-cyber-red { color: var(--cyber-red) !important; }
+
+.border-cyber {
+    border-color: var(--cyber-border) !important;
+}
+
+/* Botón Principal Cyberpunk */
+.btn-cyber {
+    background-color: transparent;
+    color: var(--cyber-cyan);
+    border: 1px solid var(--cyber-cyan);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.15);
+    transition: all 0.2s ease;
+}
+
+.btn-cyber:hover, .btn-cyber.active {
+    background-color: var(--cyber-cyan);
+    color: #0b0d12;
+    font-weight: 600;
+    box-shadow: 0 0 18px rgba(0, 243, 255, 0.5);
+}
+
+/* Botón Acento Crítico (#cc0000 de tu manual) */
+.btn-cyber-red {
+    background-color: var(--cyber-red);
+    color: #ffffff;
+    border: 1px solid var(--cyber-red);
+}
+
+.btn-cyber-red:hover {
+    background-color: #a30000;
+    color: #ffffff;
+    box-shadow: 0 0 14px rgba(204, 0, 0, 0.5);
+}
+
+/* Tarjetas del Proyecto */
+.cyber-card {
+    background-color: var(--cyber-surface);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cyber-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--cyber-cyan);
+    box-shadow: 0 8px 24px rgba(0, 243, 255, 0.12);
+}
+
+.ratio-16x9 img {
+    object-fit: cover;
+}
